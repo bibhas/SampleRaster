@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Script to install a debug build of the sample raster driver.
+#
+# Uses xcodebuild.
+#
+
+# Install into /...
+sudo xcodebuild -target SampleRaster -configuration Debug install DSTROOT=/ RC_ARCHS="ppc i386 x86_64"

@@ -1,0 +1,44 @@
+#!/bin/sh
+#
+# Script to make an installable package of the sample raster driver.
+#
+# Uses xcodebuild, PackageMaker, and hdiutil.
+#
+
+# Create a clean install directory...
+if test -d build/Package; then
+	sudo chmod -R u+w build/Package
+	sudo rm -rf build/Package
+fi
+mkdir -p build/Package/Root
+mkdir -p build/Package/Resources
+
+# Install into this directory...
+xcodebuild -target SampleRaster -configuration Release install DSTROOT=build/Package/Root
+
+# Fix up the permissions...
+sudo chown -R root:wheel build/Package/Root
+sudo chmod -R -w build/PackageRoot
+
+# Extract the version number from the project...
+version=`agvtool vers -terse`
+
+# Copy the resource files...
+cp README.txt build/Package/Resources/Welcome.txt
+sed -e '1,$s/@VERSION@/'$version'/g' <PackageInfo.plist >build/Package/Info.plist
+sed -e '1,$s/@VERSION@/'$version'/g' <PackageDesc.plist >build/Package/Desc.plist
+
+# Make the package with PackageMaker...
+PackageMaker=/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker
+
+rm -rf SampleRaster.pkg
+echo $PackageMaker -build -v -p SampleRaster.pkg ...
+sudo $PackageMaker -build -v -p SampleRaster.pkg \
+	-f build/Package/Root \
+	-r build/Package/Resources \
+	-d build/Package/Desc.plist \
+	-i build/Package/Info.plist
+
+# Make a disk image with hdiutil...
+echo hdiutil create -ov -srcfolder SampleRaster.pkg SampleRaster-$version.dmg
+sudo hdiutil create -ov -srcfolder SampleRaster.pkg SampleRaster-$version.dmg

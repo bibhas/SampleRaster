@@ -1,0 +1,138 @@
+*PPD-Adobe: "4.3"
+*% PPD file for Sample Raster with CUPS.
+*% Created by the CUPS PPD Compiler CUPS v1.4b3.
+*% Copyright 2008-2009 Apple Inc. All Rights Reserved.
+*% IMPORTANT: This Apple software is supplied to you by Apple Inc.,
+*% ("Apple") in consideration of your agreement to the following terms,
+*% and your use, installation, modification or redistribution of this Ap
+*FormatVersion: "4.3"
+*FileVersion: "2.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "sample.ppd"
+*Product: "(Sample Raster)"
+*Manufacturer: "Acme"
+*ModelName: "Acme Sample Raster"
+*ShortNickName: "Acme Sample Raster"
+*NickName: "Acme Sample Raster, 2.1"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*% Driver-defined attributes...
+*1284DeviceID: "MFG:Acme;MODEL:Sample Raster;"
+*cupsFilter: "application/vnd.cups-raster 100 /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS/rastertosample"
+*cupsFilter: "application/vnd.cups-command 100 /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS/commandtosample"
+*cupsCommands: "ChangeInk Clean PrintSelfTestPage ReportLevels"
+*APPrinterIconPath: "/Library/Printers/Acme/SampleRaster.bundle/Contents/Resources/SampleRaster.icns"
+*APPrinterUtilityPath: "/Library/Printers/Acme/SampleUtility.app"
+*APDialogExtension: "/Library/Printers/Acme/SampleRasterPDE.bundle"
+*APHelpBook: "file:///Library/Printers/Acme/SampleRaster.bundle"
+*cupsIPPReason com.sample-cyan-error/Cyan ink out!: "help:anchor=changingInk%20bookID=Sample%20Raster%20Help"
+*cupsIPPReason com.sample-magenta-error/Magenta ink out!: "help:anchor=changingInk%20bookID=Sample%20Raster%20Help"
+*cupsIPPReason com.sample-yellow-error/Yellow ink out!: "help:anchor=changingInk%20bookID=Sample%20Raster%20Help"
+*cupsIPPReason com.sample-black-error/Black ink out!: "help:anchor=changingInk%20bookID=Sample%20Raster%20Help"
+*cupsMarkerName Cyan/Cyan Ink: ""
+*cupsMarkerName Magenta/Magenta Ink: ""
+*cupsMarkerName Yellow/Yellow Ink: ""
+*cupsMarkerName Black/Black Ink: ""
+*cupsICCProfile Gray../Grayscale: "/System/Library/ColorSync/Profiles/Generic Gray Profile.icc"
+*cupsICCProfile RGB../Color: "/System/Library/ColorSync/Profiles/Generic RGB Profile.icc"
+*APPrinterPreset Photo_on_Photo_Paper/Photo Printing on Glossy Paper: "*MediaType Glossy *ColorModel RGB *Resolution 300dpi"
+*APPrinterPreset Photo_on_Matte_Paper/Photo Printing on Matte Paper: "*MediaType Matte *ColorModel RGB *Resolution 300dpi"
+*cupsVersion: 1.4
+*cupsModelNumber: 0
+*cupsManualCopies: True
+*UIConstraints: *MediaType Plain *Resolution 300dpi
+*UIConstraints: *Resolution 300dpi *MediaType Plain
+*UIConstraints: *Resolution 300dpi *MediaType Plain
+*UIConstraints: *MediaType Plain *Resolution 300dpi
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/US Letter: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/US Letter: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: Letter
+*ImageableArea Letter/US Letter: "0.00 0.00 612.00 792.00"
+*ImageableArea A4/A4: "0.00 0.00 595.00 842.00"
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/US Letter: "612.00 792.00"
+*PaperDimension A4/A4: "595.00 842.00"
+*MaxMediaWidth: "864.00"
+*MaxMediaHeight: "1296.00"
+*HWMargins: 0.00 0.00 0.00 0.00
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 144.00 864.00
+*ParamCustomPageSize Height: 2 points 144.00 1296.00
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*RequiresPageRegion All: True
+*OpenUI *ColorModel/Output Mode: PickOne
+*OrderDependency: 10.0 AnySetup *ColorModel
+*DefaultColorModel: RGB
+*ColorModel Gray: "<</cupsColorSpace 0/cupsColorOrder 0/cupsBitsPerColor 8>>setpagedevice"
+*ColorModel RGB: "<</cupsColorSpace 1/cupsColorOrder 0/cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *ColorModel
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 10.0 AnySetup *MediaType
+*DefaultMediaType: Glossy
+*MediaType Plain/Plain Paper: "<</MediaType(Plain)>>setpagedevice"
+*MediaType Matte/Matte Photo Paper: "<</MediaType(Matte)/cupsPreferredBitsPerColor 16>>setpagedevice"
+*MediaType Glossy/Glossy Photo Paper: "<</MediaType(Glossy)/cupsPreferredBitsPerColor 16>>setpagedevice"
+*CloseUI: *MediaType
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10.0 AnySetup *Resolution
+*DefaultResolution: 300dpi
+*Resolution 72dpi: "<</HWResolution[72 72]>>setpagedevice"
+*Resolution 100dpi: "<</HWResolution[100 100]>>setpagedevice"
+*Resolution 300dpi: "<</HWResolution[300 300]>>setpagedevice"
+*CloseUI: *Resolution
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(1.05)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(1.05)" Standard ROM
+*Font AvantGarde-Demi: Standard "(1.05)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(1.05)" Standard ROM
+*Font Bookman-Demi: Standard "(1.05)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(1.05)" Standard ROM
+*Font Bookman-Light: Standard "(1.05)" Standard ROM
+*Font Bookman-LightItalic: Standard "(1.05)" Standard ROM
+*Font Courier: Standard "(1.05)" Standard ROM
+*Font Courier-Bold: Standard "(1.05)" Standard ROM
+*Font Courier-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Courier-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica: Standard "(1.05)" Standard ROM
+*Font Helvetica-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Oblique: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(1.05)" Standard ROM
+*Font Palatino-Bold: Standard "(1.05)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Palatino-Italic: Standard "(1.05)" Standard ROM
+*Font Palatino-Roman: Standard "(1.05)" Standard ROM
+*Font Symbol: Special "(001.005)" Special ROM
+*Font Times-Bold: Standard "(1.05)" Standard ROM
+*Font Times-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Times-Italic: Standard "(1.05)" Standard ROM
+*Font Times-Roman: Standard "(1.05)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(1.05)" Standard ROM
+*Font ZapfDingbats: Special "(001.005)" Special ROM
+*% End of sample.ppd, 07137 bytes.

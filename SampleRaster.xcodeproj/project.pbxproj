@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		27A19DB50D860748008BC9C3 /* Files */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 27A19DB80D860767008BC9C3 /* Build configuration list for PBXAggregateTarget "Files" */;
+			buildPhases = (
+				2797D78C0D8625D9007B395A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Files;
+			productName = Files;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		27389B5D0DC16C34002A8CD6 /* English.lproj.helpindex in Resources */ = {isa = PBXBuildFile; fileRef = 27389B5C0DC16C34002A8CD6 /* English.lproj.helpindex */; };
+		27389B600DC16C4F002A8CD6 /* SampleRasterHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 27389B5F0DC16C4F002A8CD6 /* SampleRasterHelp.html */; };
+		27389B680DC16DB6002A8CD6 /* changingInk.html in Resources */ = {isa = PBXBuildFile; fileRef = 27389B640DC16DB6002A8CD6 /* changingInk.html */; };
+		274E153D0D8FFAE3004D34ED /* libcups.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795150B0D7E611700E1100D /* libcups.2.dylib */; };
+		274E155E0D8FFD4C004D34ED /* SampleRasterPDE.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274E155D0D8FFD4C004D34ED /* SampleRasterPDE.xib */; };
+		274E15620D90002A004D34ED /* SampleRasterPDE.m in Sources */ = {isa = PBXBuildFile; fileRef = 274E15610D90002A004D34ED /* SampleRasterPDE.m */; };
+		274E157E0D9014AF004D34ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E157D0D9014AF004D34ED /* Cocoa.framework */; };
+		277B16FC0D8D4A5000482BF1 /* SampleUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B16FB0D8D4A5000482BF1 /* SampleUtility.m */; };
+		277B17040D8D4D7E00482BF1 /* SampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B17030D8D4D7E00482BF1 /* SampleController.m */; };
+		279515040D7E60B900E1100D /* commandtosample.c in Sources */ = {isa = PBXBuildFile; fileRef = 279515020D7E60A600E1100D /* commandtosample.c */; };
+		279515060D7E60D100E1100D /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 279515050D7E60D100E1100D /* common.c */; };
+		279515070D7E60D100E1100D /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 279515050D7E60D100E1100D /* common.c */; };
+		2795150A0D7E60E700E1100D /* rastertosample.c in Sources */ = {isa = PBXBuildFile; fileRef = 279515080D7E60E700E1100D /* rastertosample.c */; };
+		2795150C0D7E611700E1100D /* libcups.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795150B0D7E611700E1100D /* libcups.2.dylib */; };
+		2795150D0D7E611700E1100D /* libcups.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795150B0D7E611700E1100D /* libcups.2.dylib */; };
+		2795150F0D7E612A00E1100D /* libcupsimage.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795150E0D7E612A00E1100D /* libcupsimage.2.dylib */; };
+		2797D4B20D8624A8007B395A /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 279515050D7E60D100E1100D /* common.c */; };
+		2797D4B30D8624A8007B395A /* sampletopdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 27A19D340D85E896008BC9C3 /* sampletopdf.c */; };
+		2797D77E0D862541007B395A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A19D970D86036C008BC9C3 /* ApplicationServices.framework */; };
+		2797D77F0D862541007B395A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5AC1B0D7F489C0011DADF /* CoreFoundation.framework */; };
+		2797D7800D862541007B395A /* libcups.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795150B0D7E611700E1100D /* libcups.2.dylib */; };
+		2797D83F0D886C85007B395A /* SampleUtility.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2797D83E0D886C85007B395A /* SampleUtility.xib */; };
+		279F962F0D8B1E3C0027334B /* SampleUtility.icns in Resources */ = {isa = PBXBuildFile; fileRef = 279F962E0D8B1E3C0027334B /* SampleUtility.icns */; };
+		279F96B00D8B22590027334B /* SampleSuppliesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279F96AF0D8B22590027334B /* SampleSuppliesView.m */; };
+		2932B3A80EB7B0720096BD57 /* SampleRaster.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2932B3A70EB7B0720096BD57 /* SampleRaster.icns */; };
+		7282ED6C0DE4E643003A377B /* libcups.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2795150B0D7E611700E1100D /* libcups.2.dylib */; };
+		7282ED6F0DE4E64C003A377B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E157D0D9014AF004D34ED /* Cocoa.framework */; };
+		72E5AC1C0D7F489C0011DADF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5AC1B0D7F489C0011DADF /* CoreFoundation.framework */; };
+		72E5AC1D0D7F489C0011DADF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5AC1B0D7F489C0011DADF /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		274E153B0D8FFAD2004D34ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274E15340D8FFA83004D34ED;
+			remoteInfo = SampleRasterPDE;
+		};
+		2797D49A0D8623D9007B395A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27401EFF0D7E5FBD0046565B;
+			remoteInfo = rastertosample;
+		};
+		2797D49C0D8623D9007B395A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27401F060D7E5FF00046565B;
+			remoteInfo = commandtosample;
+		};
+		2797D4A00D8623D9007B395A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A19DB50D860748008BC9C3;
+			remoteInfo = Files;
+		};
+		2797D4B90D8624D9007B395A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2797D4AD0D862476007B395A;
+			remoteInfo = sampletopdf;
+		};
+		2797D8230D8641FF007B395A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2797D81C0D864183007B395A;
+			remoteInfo = SampleUtility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27389B500DC16BC3002A8CD6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file; name = English; path = English.lproj/English.lproj.helpindex; sourceTree = "<group>"; };
+		27389B520DC16BC3002A8CD6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/SampleRasterHelp.html; sourceTree = "<group>"; };
+		27389B650DC16DB6002A8CD6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = English; path = English.lproj/changingInk.html; sourceTree = "<group>"; };
+		27401F000D7E5FBD0046565B /* rastertosample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rastertosample; sourceTree = BUILT_PRODUCTS_DIR; };
+		27401F070D7E5FF00046565B /* commandtosample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = commandtosample; sourceTree = BUILT_PRODUCTS_DIR; };
+		274E15350D8FFA83004D34ED /* SampleRasterPDE.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleRasterPDE.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		274E15360D8FFA83004D34ED /* SampleRasterPDE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleRasterPDE-Info.plist"; sourceTree = "<group>"; };
+		274E155D0D8FFD4C004D34ED /* SampleRasterPDE.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleRasterPDE.xib; sourceTree = "<group>"; };
+		274E15600D90002A004D34ED /* SampleRasterPDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleRasterPDE.h; sourceTree = "<group>"; };
+		274E15610D90002A004D34ED /* SampleRasterPDE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleRasterPDE.m; sourceTree = "<group>"; };
+		274E157D0D9014AF004D34ED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		277B16FB0D8D4A5000482BF1 /* SampleUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleUtility.m; sourceTree = "<group>"; };
+		277B17020D8D4D7E00482BF1 /* SampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleController.h; sourceTree = "<group>"; };
+		277B17030D8D4D7E00482BF1 /* SampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleController.m; sourceTree = "<group>"; };
+		279515020D7E60A600E1100D /* commandtosample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commandtosample.c; sourceTree = "<group>"; };
+		279515050D7E60D100E1100D /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		279515080D7E60E700E1100D /* rastertosample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rastertosample.c; sourceTree = "<group>"; };
+		279515090D7E60E700E1100D /* sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample.h; sourceTree = "<group>"; };
+		2795150B0D7E611700E1100D /* libcups.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcups.2.dylib; path = /usr/lib/libcups.2.dylib; sourceTree = "<absolute>"; };
+		2795150E0D7E612A00E1100D /* libcupsimage.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcupsimage.2.dylib; path = /usr/lib/libcupsimage.2.dylib; sourceTree = "<absolute>"; };
+		2797D4950D862395007B395A /* SampleRaster.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleRaster.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2797D4AE0D862476007B395A /* sampletopdf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sampletopdf; sourceTree = BUILT_PRODUCTS_DIR; };
+		2797D81D0D864183007B395A /* SampleUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2797D81F0D864183007B395A /* SampleUtility-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleUtility-Info.plist"; sourceTree = "<group>"; };
+		2797D83E0D886C85007B395A /* SampleUtility.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleUtility.xib; sourceTree = "<group>"; };
+		279F962E0D8B1E3C0027334B /* SampleUtility.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SampleUtility.icns; sourceTree = "<group>"; };
+		279F96AE0D8B22590027334B /* SampleSuppliesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleSuppliesView.h; sourceTree = "<group>"; };
+		279F96AF0D8B22590027334B /* SampleSuppliesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleSuppliesView.m; sourceTree = "<group>"; };
+		27A19D340D85E896008BC9C3 /* sampletopdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sampletopdf.c; sourceTree = "<group>"; };
+		27A19D970D86036C008BC9C3 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		2932B3A70EB7B0720096BD57 /* SampleRaster.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SampleRaster.icns; sourceTree = "<group>"; };
+		72E5ABFA0D7F1A8C0011DADF /* SampleRaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleRaster-Info.plist"; sourceTree = "<group>"; };
+		72E5AC0D0D7F1B970011DADF /* sample.drv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.drv; sourceTree = "<group>"; };
+		72E5AC1B0D7F489C0011DADF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27401EFE0D7E5FBD0046565B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2795150C0D7E611700E1100D /* libcups.2.dylib in Frameworks */,
+				2795150F0D7E612A00E1100D /* libcupsimage.2.dylib in Frameworks */,
+				72E5AC1D0D7F489C0011DADF /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27401F050D7E5FF00046565B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2795150D0D7E611700E1100D /* libcups.2.dylib in Frameworks */,
+				72E5AC1C0D7F489C0011DADF /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274E15330D8FFA83004D34ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274E153D0D8FFAE3004D34ED /* libcups.2.dylib in Frameworks */,
+				274E157E0D9014AF004D34ED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D4930D862395007B395A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D4AC0D862476007B395A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2797D77E0D862541007B395A /* ApplicationServices.framework in Frameworks */,
+				2797D77F0D862541007B395A /* CoreFoundation.framework in Frameworks */,
+				2797D7800D862541007B395A /* libcups.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D81B0D864183007B395A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7282ED6C0DE4E643003A377B /* libcups.2.dylib in Frameworks */,
+				7282ED6F0DE4E64C003A377B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* SampleRaster */ = {
+			isa = PBXGroup;
+			children = (
+				274E154A0D8FFC3C004D34ED /* Backends */,
+				274E15450D8FFBF1004D34ED /* Filters */,
+				274E154F0D8FFC62004D34ED /* PDEs */,
+				274E15520D8FFC79004D34ED /* Printer Utilities */,
+				274E15570D8FFCA0004D34ED /* Resources */,
+				27A19D970D86036C008BC9C3 /* ApplicationServices.framework */,
+				274E157D0D9014AF004D34ED /* Cocoa.framework */,
+				72E5AC1B0D7F489C0011DADF /* CoreFoundation.framework */,
+				2795150E0D7E612A00E1100D /* libcupsimage.2.dylib */,
+				2795150B0D7E611700E1100D /* libcups.2.dylib */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = SampleRaster;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2797D4950D862395007B395A /* SampleRaster.bundle */,
+				2797D81D0D864183007B395A /* SampleUtility.app */,
+				274E15350D8FFA83004D34ED /* SampleRasterPDE.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274E15450D8FFBF1004D34ED /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				27401F070D7E5FF00046565B /* commandtosample */,
+				279515020D7E60A600E1100D /* commandtosample.c */,
+				279515050D7E60D100E1100D /* common.c */,
+				27401F000D7E5FBD0046565B /* rastertosample */,
+				279515080D7E60E700E1100D /* rastertosample.c */,
+				279515090D7E60E700E1100D /* sample.h */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+		274E154A0D8FFC3C004D34ED /* Backends */ = {
+			isa = PBXGroup;
+			children = (
+				2797D4AE0D862476007B395A /* sampletopdf */,
+				27A19D340D85E896008BC9C3 /* sampletopdf.c */,
+			);
+			name = Backends;
+			sourceTree = "<group>";
+		};
+		274E154F0D8FFC62004D34ED /* PDEs */ = {
+			isa = PBXGroup;
+			children = (
+				274E15600D90002A004D34ED /* SampleRasterPDE.h */,
+				274E15610D90002A004D34ED /* SampleRasterPDE.m */,
+				274E15360D8FFA83004D34ED /* SampleRasterPDE-Info.plist */,
+				274E155D0D8FFD4C004D34ED /* SampleRasterPDE.xib */,
+			);
+			name = PDEs;
+			sourceTree = "<group>";
+		};
+		274E15520D8FFC79004D34ED /* Printer Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2797D81F0D864183007B395A /* SampleUtility-Info.plist */,
+				2797D83E0D886C85007B395A /* SampleUtility.xib */,
+				277B17020D8D4D7E00482BF1 /* SampleController.h */,
+				277B17030D8D4D7E00482BF1 /* SampleController.m */,
+				279F96AE0D8B22590027334B /* SampleSuppliesView.h */,
+				279F96AF0D8B22590027334B /* SampleSuppliesView.m */,
+				277B16FB0D8D4A5000482BF1 /* SampleUtility.m */,
+				279F962E0D8B1E3C0027334B /* SampleUtility.icns */,
+			);
+			name = "Printer Utilities";
+			sourceTree = "<group>";
+		};
+		274E15570D8FFCA0004D34ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27389B640DC16DB6002A8CD6 /* changingInk.html */,
+				27389B5C0DC16C34002A8CD6 /* English.lproj.helpindex */,
+				27389B5F0DC16C4F002A8CD6 /* SampleRasterHelp.html */,
+				72E5ABFA0D7F1A8C0011DADF /* SampleRaster-Info.plist */,
+				2932B3A70EB7B0720096BD57 /* SampleRaster.icns */,
+				72E5AC0D0D7F1B970011DADF /* sample.drv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27401EFF0D7E5FBD0046565B /* rastertosample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27401F0B0D7E601A0046565B /* Build configuration list for PBXNativeTarget "rastertosample" */;
+			buildPhases = (
+				27401EFD0D7E5FBD0046565B /* Sources */,
+				27401EFE0D7E5FBD0046565B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rastertosample;
+			productName = rastertosample;
+			productReference = 27401F000D7E5FBD0046565B /* rastertosample */;
+			productType = "com.apple.product-type.tool";
+		};
+		27401F060D7E5FF00046565B /* commandtosample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27401F0C0D7E601A0046565B /* Build configuration list for PBXNativeTarget "commandtosample" */;
+			buildPhases = (
+				27401F040D7E5FF00046565B /* Sources */,
+				27401F050D7E5FF00046565B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = commandtosample;
+			productName = commandtosample;
+			productReference = 27401F070D7E5FF00046565B /* commandtosample */;
+			productType = "com.apple.product-type.tool";
+		};
+		274E15340D8FFA83004D34ED /* SampleRasterPDE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274E153A0D8FFA84004D34ED /* Build configuration list for PBXNativeTarget "SampleRasterPDE" */;
+			buildPhases = (
+				274E15310D8FFA83004D34ED /* Resources */,
+				274E15320D8FFA83004D34ED /* Sources */,
+				274E15330D8FFA83004D34ED /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleRasterPDE;
+			productName = SampleRasterPDE;
+			productReference = 274E15350D8FFA83004D34ED /* SampleRasterPDE.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2797D4940D862395007B395A /* SampleRaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2797D4A40D8623F4007B395A /* Build configuration list for PBXNativeTarget "SampleRaster" */;
+			buildPhases = (
+				2797D4910D862395007B395A /* Resources */,
+				2797D4920D862395007B395A /* Sources */,
+				2797D4930D862395007B395A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2797D4A10D8623D9007B395A /* PBXTargetDependency */,
+				2797D49D0D8623D9007B395A /* PBXTargetDependency */,
+				2797D49B0D8623D9007B395A /* PBXTargetDependency */,
+				2797D4BA0D8624D9007B395A /* PBXTargetDependency */,
+				2797D8240D8641FF007B395A /* PBXTargetDependency */,
+				274E153C0D8FFAD2004D34ED /* PBXTargetDependency */,
+			);
+			name = SampleRaster;
+			productName = SampleRaster;
+			productReference = 2797D4950D862395007B395A /* SampleRaster.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2797D4AD0D862476007B395A /* sampletopdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2797D4B60D8624AF007B395A /* Build configuration list for PBXNativeTarget "sampletopdf" */;
+			buildPhases = (
+				2797D4AB0D862476007B395A /* Sources */,
+				2797D4AC0D862476007B395A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sampletopdf;
+			productName = sampletopdf;
+			productReference = 2797D4AE0D862476007B395A /* sampletopdf */;
+			productType = "com.apple.product-type.tool";
+		};
+		2797D81C0D864183007B395A /* SampleUtility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2797D8220D864185007B395A /* Build configuration list for PBXNativeTarget "SampleUtility" */;
+			buildPhases = (
+				2797D8190D864183007B395A /* Resources */,
+				2797D81A0D864183007B395A /* Sources */,
+				2797D81B0D864183007B395A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleUtility;
+			productName = SampleUtility;
+			productReference = 2797D81D0D864183007B395A /* SampleUtility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "SampleRaster" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* SampleRaster */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2797D4940D862395007B395A /* SampleRaster */,
+				27A19DB50D860748008BC9C3 /* Files */,
+				27401EFF0D7E5FBD0046565B /* rastertosample */,
+				27401F060D7E5FF00046565B /* commandtosample */,
+				2797D4AD0D862476007B395A /* sampletopdf */,
+				2797D81C0D864183007B395A /* SampleUtility */,
+				274E15340D8FFA83004D34ED /* SampleRasterPDE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274E15310D8FFA83004D34ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274E155E0D8FFD4C004D34ED /* SampleRasterPDE.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D4910D862395007B395A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27389B5D0DC16C34002A8CD6 /* English.lproj.helpindex in Resources */,
+				27389B600DC16C4F002A8CD6 /* SampleRasterHelp.html in Resources */,
+				27389B680DC16DB6002A8CD6 /* changingInk.html in Resources */,
+				2932B3A80EB7B0720096BD57 /* SampleRaster.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D8190D864183007B395A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2797D83F0D886C85007B395A /* SampleUtility.xib in Resources */,
+				279F962F0D8B1E3C0027334B /* SampleUtility.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2797D78C0D8625D9007B395A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Symlink the commandtosample and rastertosample filters to /usr/libexec/cups/filter\nmkdir -p $DSTROOT/usr/libexec/cups/filter\nln -sf /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS/commandtosample $DSTROOT/usr/libexec/cups/filter\nln -sf /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS/rastertosample $DSTROOT/usr/libexec/cups/filter\n\n# Symlink the sampletopdf backend to /usr/libexec/cups/backend\nmkdir -p $DSTROOT/usr/libexec/cups/backend\nln -sf /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS/sampletopdf $DSTROOT/usr/libexec/cups/backend\n\n# Create the PPD file and place it in the PPDs directory...\nmkdir -p $DSTROOT/Library/Printers/PPDs/Contents/Resources\nppdc -d $DSTROOT/Library/Printers/PPDs/Contents/Resources -l de,es,fr,ja $SRCROOT/sample.drv";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27401EFD0D7E5FBD0046565B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279515060D7E60D100E1100D /* common.c in Sources */,
+				2795150A0D7E60E700E1100D /* rastertosample.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27401F040D7E5FF00046565B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279515040D7E60B900E1100D /* commandtosample.c in Sources */,
+				279515070D7E60D100E1100D /* common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274E15320D8FFA83004D34ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274E15620D90002A004D34ED /* SampleRasterPDE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D4920D862395007B395A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D4AB0D862476007B395A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2797D4B20D8624A8007B395A /* common.c in Sources */,
+				2797D4B30D8624A8007B395A /* sampletopdf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2797D81A0D864183007B395A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279F96B00D8B22590027334B /* SampleSuppliesView.m in Sources */,
+				277B16FC0D8D4A5000482BF1 /* SampleUtility.m in Sources */,
+				277B17040D8D4D7E00482BF1 /* SampleController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		274E153C0D8FFAD2004D34ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274E15340D8FFA83004D34ED /* SampleRasterPDE */;
+			targetProxy = 274E153B0D8FFAD2004D34ED /* PBXContainerItemProxy */;
+		};
+		2797D49B0D8623D9007B395A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27401EFF0D7E5FBD0046565B /* rastertosample */;
+			targetProxy = 2797D49A0D8623D9007B395A /* PBXContainerItemProxy */;
+		};
+		2797D49D0D8623D9007B395A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27401F060D7E5FF00046565B /* commandtosample */;
+			targetProxy = 2797D49C0D8623D9007B395A /* PBXContainerItemProxy */;
+		};
+		2797D4A10D8623D9007B395A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27A19DB50D860748008BC9C3 /* Files */;
+			targetProxy = 2797D4A00D8623D9007B395A /* PBXContainerItemProxy */;
+		};
+		2797D4BA0D8624D9007B395A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2797D4AD0D862476007B395A /* sampletopdf */;
+			targetProxy = 2797D4B90D8624D9007B395A /* PBXContainerItemProxy */;
+		};
+		2797D8240D8641FF007B395A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2797D81C0D864183007B395A /* SampleUtility */;
+			targetProxy = 2797D8230D8641FF007B395A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27389B5C0DC16C34002A8CD6 /* English.lproj.helpindex */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27389B500DC16BC3002A8CD6 /* English */,
+			);
+			name = English.lproj.helpindex;
+			sourceTree = "<group>";
+		};
+		27389B5F0DC16C4F002A8CD6 /* SampleRasterHelp.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27389B520DC16BC3002A8CD6 /* English */,
+			);
+			name = SampleRasterHelp.html;
+			sourceTree = "<group>";
+		};
+		27389B640DC16DB6002A8CD6 /* changingInk.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27389B650DC16DB6002A8CD6 /* English */,
+			);
+			name = changingInk.html;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 3.0;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		27401F020D7E5FBD0046565B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = rastertosample;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		27401F030D7E5FBD0046565B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = rastertosample;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		27401F090D7E5FF00046565B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = commandtosample;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		27401F0A0D7E5FF00046565B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = commandtosample;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		274E15380D8FFA84004D34ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SampleRasterPDE;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		274E15390D8FFA84004D34ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SampleRasterPDE;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2797D4960D862396007B395A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRaster-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SampleRaster;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2797D4970D862396007B395A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRaster-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SampleRaster;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2797D4B00D862476007B395A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = sampletopdf;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2797D4B10D862476007B395A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				PRODUCT_NAME = sampletopdf;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2797D8200D864184007B395A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleUtility-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SampleUtility;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2797D8210D864184007B395A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleUtility-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SampleUtility;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		27A19DB60D860749008BC9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Files;
+			};
+			name = Debug;
+		};
+		27A19DB70D860749008BC9C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Files;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "SampleRaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27401F0B0D7E601A0046565B /* Build configuration list for PBXNativeTarget "rastertosample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27401F020D7E5FBD0046565B /* Debug */,
+				27401F030D7E5FBD0046565B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27401F0C0D7E601A0046565B /* Build configuration list for PBXNativeTarget "commandtosample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27401F090D7E5FF00046565B /* Debug */,
+				27401F0A0D7E5FF00046565B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274E153A0D8FFA84004D34ED /* Build configuration list for PBXNativeTarget "SampleRasterPDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274E15380D8FFA84004D34ED /* Debug */,
+				274E15390D8FFA84004D34ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2797D4A40D8623F4007B395A /* Build configuration list for PBXNativeTarget "SampleRaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2797D4960D862396007B395A /* Debug */,
+				2797D4970D862396007B395A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2797D4B60D8624AF007B395A /* Build configuration list for PBXNativeTarget "sampletopdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2797D4B00D862476007B395A /* Debug */,
+				2797D4B10D862476007B395A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2797D8220D864185007B395A /* Build configuration list for PBXNativeTarget "SampleUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2797D8200D864184007B395A /* Debug */,
+				2797D8210D864184007B395A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27A19DB80D860767008BC9C3 /* Build configuration list for PBXAggregateTarget "Files" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27A19DB60D860749008BC9C3 /* Debug */,
+				27A19DB70D860749008BC9C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
