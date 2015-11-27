@@ -24,31 +24,35 @@ are as complicated as the sampletopdf backend.
 INSTALLATION
 
 You must be running Mac OS X 10.6 or higher to compile or install from
-source.  Packages created on Mac OS X 10.6.x and higher will also work on
-10.4.x.
+source.
 
 The "makepackage.sh" script can be used to create an installable driver
 package, or you can just install from source directly with the following
 command:
 
-    xcodebuild -target SampleRaster install DSTROOT=/
+    sudo xcodebuild -target SampleRaster -configuration Debug_10.6 install DSTROOT=/
 
-Once you have installed the software, open the Print & Fax preference pane
+Once you have installed the software, open the Print & Scan preference pane
 and click on the "+" button to add a printer.  Choose the "Sample Raster Driver"
 listing from the list and click "Add".
 
 
 NOTES
 
+Products requiring PPC support must be built on 10.6.x or 10.5.x using XCode 3.
+Products with only Intel support can be build with 10.6.6 or later using
+Xcode 4.
+
 The ink level monitoring supported by the printer utility and help will only
 work with Mac OS X 10.5.3 and higher.  The driver as a whole works with Mac
-OS X 10.4 and higher.
+OS X 10.6 and higher. Builds targeting Mac OS X 10.6 and higher use the Grand
+Central Dispatch version of the ink level monitoring code.
 
 The backend writes the virtual printed pages to PDF files in a per-queue
 directory in /Library/Caches, typically /Library/Caches/Sample_Raster_Driver
 if the default printer name is used when you add the printer.
 
-If you use this sample project as the start point for your product, 
+If you use this sample project as the start point for your product,
 before releasing your product, make sure you adjust the VALID_ARCHS value
 of each target in the project file and the RC_ARCHS value to be passed to
 'xcodebuild' in your build script, based on the versions of OS you support.

@@ -47,6 +47,7 @@
  */
 
 #include <cups/cups.h>			/* CUPS API headers */
+#include <cups/ppd.h>
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>

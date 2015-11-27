@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -132,6 +132,7 @@
 		72E5ABFA0D7F1A8C0011DADF /* SampleRaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleRaster-Info.plist"; sourceTree = "<group>"; };
 		72E5AC0D0D7F1B970011DADF /* sample.drv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.drv; sourceTree = "<group>"; };
 		72E5AC1B0D7F489C0011DADF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		C43DD486140D5B1E00852D83 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +286,7 @@
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				C43DD486140D5B1E00852D83 /* README.txt */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -402,9 +404,19 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "SampleRaster" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* SampleRaster */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,10 +595,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB928A08733DD80010E9CD /* Debug */ = {
+		08198765132FCC770098D853 /* Debug_10.7 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 3.0;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CURRENT_PROJECT_VERSION = 4.0;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -596,15 +609,154 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-D",
+					USE_GCD,
+				);
 				SDKROOT = "";
+				VALID_ARCHS = "x86_64 i386";
 			};
-			name = Debug;
+			name = Debug_10.7;
 		};
-		1DEB928B08733DD80010E9CD /* Release */ = {
+		08198766132FCC770098D853 /* Debug_10.7 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 3.0;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRaster-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SampleRaster;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.7;
+		};
+		08198767132FCC770098D853 /* Debug_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Files;
+			};
+			name = Debug_10.7;
+		};
+		08198768132FCC770098D853 /* Debug_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = rastertosample;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.7;
+		};
+		08198769132FCC770098D853 /* Debug_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = commandtosample;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.7;
+		};
+		0819876A132FCC770098D853 /* Debug_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = sampletopdf;
+				SDKROOT = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.7;
+		};
+		0819876B132FCC770098D853 /* Debug_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleUtility-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SampleUtility;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.7;
+		};
+		0819876C132FCC770098D853 /* Debug_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SampleRasterPDE;
+				SDKROOT = "";
+				VALID_ARCHS = "x86_64 i386";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.7;
+		};
+		0819876D132FCC810098D853 /* Release_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CURRENT_PROJECT_VERSION = 4.0;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -615,131 +767,174 @@
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-D",
+					USE_GCD,
+				);
 				SDKROOT = "";
+				VALID_ARCHS = "x86_64 i386";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release;
+			name = Release_10.7;
 		};
-		27401F020D7E5FBD0046565B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				PRODUCT_NAME = rastertosample;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		27401F030D7E5FBD0046565B /* Release */ = {
+		0819876E132FCC810098D853 /* Release_10.7 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				PRODUCT_NAME = rastertosample;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRaster-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SampleRaster;
+				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = Release_10.7;
 		};
-		27401F090D7E5FF00046565B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				PRODUCT_NAME = commandtosample;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		27401F0A0D7E5FF00046565B /* Release */ = {
+		0819876F132FCC810098D853 /* Release_10.7 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				PRODUCT_NAME = commandtosample;
+				PRODUCT_NAME = Files;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = Release_10.7;
 		};
-		274E15380D8FFA84004D34ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
-				INSTALL_PATH = /Library/Printers/Acme;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = SampleRasterPDE;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		274E15390D8FFA84004D34ED /* Release */ = {
+		08198770132FCC810098D853 /* Release_10.7 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = rastertosample;
+				ZERO_LINK = NO;
+			};
+			name = Release_10.7;
+		};
+		08198771132FCC810098D853 /* Release_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = commandtosample;
+				ZERO_LINK = NO;
+			};
+			name = Release_10.7;
+		};
+		08198772132FCC810098D853 /* Release_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = sampletopdf;
+				SDKROOT = "";
+				ZERO_LINK = NO;
+			};
+			name = Release_10.7;
+		};
+		08198773132FCC810098D853 /* Release_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
+				INFOPLIST_FILE = "SampleUtility-Info.plist";
 				INSTALL_PATH = /Library/Printers/Acme;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
+				PRODUCT_NAME = SampleUtility;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release_10.7;
+		};
+		08198774132FCC810098D853 /* Release_10.7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
 				PRODUCT_NAME = SampleRasterPDE;
+				SDKROOT = "";
+				VALID_ARCHS = "x86_64 i386";
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = Release_10.7;
 		};
-		2797D4960D862396007B395A /* Debug */ = {
+		089F02401326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CURRENT_PROJECT_VERSION = 4.0;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-D",
+					USE_GCD,
+				);
+				SDKROOT = "";
+				VALID_ARCHS = "ppc x86_64 i386";
+			};
+			name = Debug_10.6;
+		};
+		089F02411326C1250066ED74 /* Debug_10.6 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -748,7 +943,6 @@
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -761,21 +955,151 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SampleRaster;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
-			name = Debug;
+			name = Debug_10.6;
 		};
-		2797D4970D862396007B395A /* Release */ = {
+		089F02421326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Files;
+			};
+			name = Debug_10.6;
+		};
+		089F02431326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = rastertosample;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.6;
+		};
+		089F02441326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = commandtosample;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.6;
+		};
+		089F02451326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = sampletopdf;
+				SDKROOT = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.6;
+		};
+		089F02461326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleUtility-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SampleUtility;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.6;
+		};
+		089F02471326C1250066ED74 /* Debug_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
+				INSTALL_PATH = /Library/Printers/Acme;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = SampleRasterPDE;
+				SDKROOT = "";
+				VALID_ARCHS = "ppc x86_64 i386";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug_10.6;
+		};
+		089F02481326C1320066ED74 /* Release_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CURRENT_PROJECT_VERSION = 4.0;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Versions/A/Frameworks",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-D",
+					USE_GCD,
+				);
+				SDKROOT = "";
+				VALID_ARCHS = "ppc x86_64 i386";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release_10.6;
+		};
+		089F02491326C1320066ED74 /* Release_10.6 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -787,123 +1111,119 @@
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SampleRaster;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = Release_10.6;
 		};
-		2797D4B00D862476007B395A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				PRODUCT_NAME = sampletopdf;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
-		2797D4B10D862476007B395A /* Release */ = {
+		089F024A1326C1320066ED74 /* Release_10.6 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				PREBINDING = NO;
-				PRODUCT_NAME = sampletopdf;
+				PRODUCT_NAME = Files;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = Release_10.6;
 		};
-		2797D8200D864184007B395A /* Debug */ = {
+		089F024B1326C1320066ED74 /* Release_10.6 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = rastertosample;
+				ZERO_LINK = NO;
+			};
+			name = Release_10.6;
+		};
+		089F024C1326C1320066ED74 /* Release_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = commandtosample;
+				ZERO_LINK = NO;
+			};
+			name = Release_10.6;
+		};
+		089F024D1326C1320066ED74 /* Release_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /Library/Printers/Acme/SampleRaster.bundle/Contents/MacOS;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = sampletopdf;
+				SDKROOT = "";
+				ZERO_LINK = NO;
+			};
+			name = Release_10.6;
+		};
+		089F024E1326C1320066ED74 /* Release_10.6 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "SampleUtility-Info.plist";
 				INSTALL_PATH = /Library/Printers/Acme;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = SampleUtility;
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
+				ZERO_LINK = NO;
 			};
-			name = Debug;
+			name = Release_10.6;
 		};
-		2797D8210D864184007B395A /* Release */ = {
+		089F024F1326C1320066ED74 /* Release_10.6 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_LOCATION = NO;
-				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "SampleUtility-Info.plist";
+				INFOPLIST_FILE = "SampleRasterPDE-Info.plist";
 				INSTALL_PATH = /Library/Printers/Acme;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					AppKit,
 				);
-				PREBINDING = NO;
-				PRODUCT_NAME = SampleUtility;
-				WRAPPER_EXTENSION = app;
+				PRODUCT_NAME = SampleRasterPDE;
+				SDKROOT = "";
+				VALID_ARCHS = "ppc x86_64 i386";
+				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
-			name = Release;
-		};
-		27A19DB60D860749008BC9C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = Files;
-			};
-			name = Debug;
-		};
-		27A19DB70D860749008BC9C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_LOCATION = NO;
-				DEPLOYMENT_POSTPROCESSING = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PRODUCT_NAME = Files;
-				ZERO_LINK = NO;
-			};
-			name = Release;
+			name = Release_10.6;
 		};
 /* End XCBuildConfiguration section */
 
@@ -911,74 +1231,90 @@
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "SampleRaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB928A08733DD80010E9CD /* Debug */,
-				1DEB928B08733DD80010E9CD /* Release */,
+				089F02401326C1250066ED74 /* Debug_10.6 */,
+				08198765132FCC770098D853 /* Debug_10.7 */,
+				089F02481326C1320066ED74 /* Release_10.6 */,
+				0819876D132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		27401F0B0D7E601A0046565B /* Build configuration list for PBXNativeTarget "rastertosample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27401F020D7E5FBD0046565B /* Debug */,
-				27401F030D7E5FBD0046565B /* Release */,
+				089F02431326C1250066ED74 /* Debug_10.6 */,
+				08198768132FCC770098D853 /* Debug_10.7 */,
+				089F024B1326C1320066ED74 /* Release_10.6 */,
+				08198770132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		27401F0C0D7E601A0046565B /* Build configuration list for PBXNativeTarget "commandtosample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27401F090D7E5FF00046565B /* Debug */,
-				27401F0A0D7E5FF00046565B /* Release */,
+				089F02441326C1250066ED74 /* Debug_10.6 */,
+				08198769132FCC770098D853 /* Debug_10.7 */,
+				089F024C1326C1320066ED74 /* Release_10.6 */,
+				08198771132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		274E153A0D8FFA84004D34ED /* Build configuration list for PBXNativeTarget "SampleRasterPDE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				274E15380D8FFA84004D34ED /* Debug */,
-				274E15390D8FFA84004D34ED /* Release */,
+				089F02471326C1250066ED74 /* Debug_10.6 */,
+				0819876C132FCC770098D853 /* Debug_10.7 */,
+				089F024F1326C1320066ED74 /* Release_10.6 */,
+				08198774132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		2797D4A40D8623F4007B395A /* Build configuration list for PBXNativeTarget "SampleRaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2797D4960D862396007B395A /* Debug */,
-				2797D4970D862396007B395A /* Release */,
+				089F02411326C1250066ED74 /* Debug_10.6 */,
+				08198766132FCC770098D853 /* Debug_10.7 */,
+				089F02491326C1320066ED74 /* Release_10.6 */,
+				0819876E132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		2797D4B60D8624AF007B395A /* Build configuration list for PBXNativeTarget "sampletopdf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2797D4B00D862476007B395A /* Debug */,
-				2797D4B10D862476007B395A /* Release */,
+				089F02451326C1250066ED74 /* Debug_10.6 */,
+				0819876A132FCC770098D853 /* Debug_10.7 */,
+				089F024D1326C1320066ED74 /* Release_10.6 */,
+				08198772132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		2797D8220D864185007B395A /* Build configuration list for PBXNativeTarget "SampleUtility" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2797D8200D864184007B395A /* Debug */,
-				2797D8210D864184007B395A /* Release */,
+				089F02461326C1250066ED74 /* Debug_10.6 */,
+				0819876B132FCC770098D853 /* Debug_10.7 */,
+				089F024E1326C1320066ED74 /* Release_10.6 */,
+				08198773132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 		27A19DB80D860767008BC9C3 /* Build configuration list for PBXAggregateTarget "Files" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27A19DB60D860749008BC9C3 /* Debug */,
-				27A19DB70D860749008BC9C3 /* Release */,
+				089F02421326C1250066ED74 /* Debug_10.6 */,
+				08198767132FCC770098D853 /* Debug_10.7 */,
+				089F024A1326C1320066ED74 /* Release_10.6 */,
+				0819876F132FCC810098D853 /* Release_10.7 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Release_10.6;
 		};
 /* End XCConfigurationList section */
 	};
